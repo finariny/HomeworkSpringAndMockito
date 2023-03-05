@@ -12,7 +12,6 @@ public class UserDaoTest {
 
     @Test
     public void shouldReturnUserWhenCallingTheMethodGetUserByName() {
-        assertNotNull(userDaoImpl.getUserByName(EXISTING_USER.getName()));
         assertEquals(EXISTING_USER, userDaoImpl.getUserByName(EXISTING_USER.getName()));
     }
 

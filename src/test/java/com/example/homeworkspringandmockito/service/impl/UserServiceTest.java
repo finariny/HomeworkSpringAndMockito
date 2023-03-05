@@ -1,6 +1,6 @@
 package com.example.homeworkspringandmockito.service.impl;
 
-import com.example.homeworkspringandmockito.repository.impl.UserDaoImpl;
+import com.example.homeworkspringandmockito.repository.UserDao;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -15,7 +15,7 @@ import static org.mockito.Mockito.*;
 public class UserServiceTest {
 
     @Mock
-    private UserDaoImpl daoMock;
+    private UserDao daoMock;
 
     @InjectMocks
     private UserServiceImpl out;
